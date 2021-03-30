@@ -20,9 +20,66 @@
             </a>
         </nav>
     </header>
+
     <main>
-        <div id="app"></div>
+        <div id="app" class="container-fluid">
+
+            <div class="row justify-content-between my-3">
+                <div id="sell" class="col-4">
+                    <div id="patron"></div>
+
+                    <div class="row justify-content-around my-3 text-center align-items-center">
+                        <div class="col-6">
+                            <img src="//placehold.it/200x300" alt="">
+                        </div>
+                        <div class="col-4">
+                            <button class='btn btn-danger my-3' onclick='app.gameController.sell("health")'>
+                                <h5> Sell Blood </h5>
+                            </button>
+                            <button class='btn btn-primary my-3' onclick='app.gameController.sell("mana")'>
+                                <h5> Make Gold </h5>
+                            </button>
+                            <button class='btn btn-success my-3' onclick='app.gameController.sell("stamina")'>
+                                <h5> Hard Labor</h5>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="buy" class="col-8">
+                    <div class="row justify-content-around text-center">
+                        <div class="col-3 p-3 m-3">
+                            <button class='btn btn-danger' onclick='app.gameController.buy(0, "health")'>
+                                <h4> Health Potion </h4>
+                            </button>
+                            <!-- <img class="my-3" src="//placehold.it/100x100" alt="">
+                            <h4>10 Gold</h4>
+                            <h4>5 Left!</h4> -->
+                        </div>
+                        <div class="col-3 p-3 m-3">
+                            <button class='btn btn-primary' onclick='app.gameController.buy(1, "mana")'>
+                                <h4> Mana Potion </h4>
+                            </button>
+                            <!-- <img class="my-3" src="//placehold.it/100x100" alt="">
+                            <h4>10 Gold</h4>
+                            <h4>5 Left!</h4> -->
+                        </div>
+                        <div class="col-3 p-3 m-3">
+                            <button class='btn btn-success' onclick='app.gameController.buy(2, "stamina")'>
+                                <h4> Stamina Potion </h4>
+                            </button>
+                            <!-- <img class="my-3" src="//placehold.it/100x100" alt="">
+                            <h4>10 Gold</h4>
+                            <h4>5 Left!</h4> -->
+                        </div>
+                    </div>
+                    <div id="shop" class="row justify-content-around"></div>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
             <div class="col">
