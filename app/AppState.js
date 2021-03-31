@@ -13,9 +13,9 @@ class AppState extends EventEmitter {
     mana: 100,
     stamina: 100,
     potions: [
-      new Potion("Health", 15),
-      new Potion("Mana", 20),
-      new Potion("Stamina", 10)
+      new Potion("Health", 20, '/assets/img/health.png'),
+      new Potion("Mana", 15, '/assets/img/mana.png'),
+      new Potion("Stamina", 10, '/assets/img/stamina.png')
     ],
   }
 }

@@ -1,9 +1,9 @@
 export default class Potion {
-    constructor(name, cost, stock = 5, potency = 10, img = '//placehold.it/150x150') {
+    constructor(name, cost, img = '/assets/img/empty.png', stock = 5, potency = 10,) {
         this.name = name
         this.cost = cost
+        this.img = img
         this.stock = stock
         this.potency = potency
-        this.img = img
     }
 }
