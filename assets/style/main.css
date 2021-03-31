@@ -10696,7 +10696,7 @@ main {
 }
 
 .bg-shop {
-  background: url("~assets/img/shop-bg.png") no-repeat center center;
+  background: url("~img/shop-bg.png") no-repeat center center;
   background-size: cover;
   background-position: bottom;
   height: 100%;
