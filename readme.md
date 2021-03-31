@@ -1,3 +1,5 @@
+Preview: https://samlimpic.github.io/vending-machine/
+
 vending-machine
 ============
 
