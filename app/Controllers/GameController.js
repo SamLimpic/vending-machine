@@ -16,27 +16,27 @@ function _draw() {
         player = "/assets/img/player.png"
     }
     document.getElementById('patron').innerHTML = `
-        <div class="row justify-content-around my-3 text-center">
-            <div class="col-10">
+        <div class="row justify-content-around my-1 text-center">
+            <div class="col-10 px-0 bg-gray-dark card-border">
                 <div class="card shadow bg-danger py-3" style="width: ${health}%"></div>
             </div>
         </div>
             <div class="row justify-content-around my-3 text-center">
-            <div class="col-10">
+            <div class="col-10 px-0 bg-gray-dark card-border">
                 <div class="card shadow bg-primary py-3" style="width: ${mana}%"></div>
             </div>
         </div>
             <div class="row justify-content-around my-3 text-center">
-            <div class="col-10">
+            <div class="col-10 px-0 bg-gray-dark card-border">
                 <div class="card shadow bg-success py-3" style="width: ${stamina}%"></div>
             </div>
         </div>
     `
     document.getElementById('patron-img').innerHTML = `
-        <button class='btn btn-warning text-light my-4 align-middle'>
+        <button class='btn btn-warning text-light my-3 align-middle'>
             <h5 class="mt-1"><strong>GOLD: ${ProxyState.state.money} </strong></h5>
         </button>
-        <img class="w-100 pt-2" src="${player}" alt="">
+        <img class="w-100" src="${player}" alt="">
     `
     document.getElementById('shop').innerHTML = `
             <div class="col-3 card card-border shadow bg-gray text-dark text-center p-3 m-3">
