@@ -7,13 +7,13 @@ function _draw() {
     let mana = ProxyState.state.mana
     let stamina = ProxyState.state.stamina
     let potion = ProxyState.state.potions
-    let player = "/assets/img/player.png"
+    let player = "./assets/img/player.png"
     if ((ProxyState.state.health <= 33) || (ProxyState.state.mana <= 33) || (ProxyState.state.stamina <= 33)) {
-        player = "/assets/img/player-33.png"
+        player = "./assets/img/player-33.png"
     } else if ((ProxyState.state.health <= 66) || (ProxyState.state.mana <= 66) || (ProxyState.state.stamina <= 66)) {
-        player = "/assets/img/player-66.png"
+        player = "./assets/img/player-66.png"
     } else {
-        player = "/assets/img/player.png"
+        player = "./assets/img/player.png"
     }
     document.getElementById('patron').innerHTML = `
         <div class="row justify-content-around my-1 text-center">
